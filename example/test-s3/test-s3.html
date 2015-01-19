@@ -1,0 +1,21 @@
+<head>
+  <title>test-s3</title>
+</head>
+
+<body>
+  <h1>S3 uploader</h1>
+
+  {{> S3Upload}}
+</body>
+
+<template name="S3Upload">
+
+  <input type="file" id="upload-to-s3">
+
+  <div id="attachment">
+    {{#with file}}
+      <img src="{{url}}">
+      <a href="#" class="delete">delete image</a>
+    {{/with}}
+  </div>
+</template>
