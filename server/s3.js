@@ -8,7 +8,6 @@ S3 = function(bucket, file, options) {
   this.file = file;
   this.directory = options.directory || '/';
   this.fileName = options.fileName || Meteor.uuid();
-
 }
 
 S3.prototype.createClient = function () {
@@ -56,7 +55,6 @@ S3.prototype.putBuffer = function (fileData, folder, fileName) {
 
 }
 
-
 S3.prototype.putFile = function (fullFile, folder) {
 
   var self = this,
@@ -76,8 +74,6 @@ S3.prototype.putFile = function (fullFile, folder) {
     throw new Meteor.Error('S3 Error', 'Error calling putFileSync');
 
 }
-
-
 
 S3.prototype.deleteFile = function(fullFile, folder) {
 

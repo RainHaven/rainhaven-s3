@@ -34,6 +34,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.methods({
     uploadFile: function (file) {
+      console.log("file: ", file.data);
       var s3 = new S3('meteor-test-bucket');
       return s3.putBuffer(file, '/subfolder/');
     },

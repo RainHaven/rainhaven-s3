@@ -8,6 +8,7 @@ S3 = {
   callUpload: function (method, files, cb) {
     _.each(files, function(file) {
       var reader = new FileReader;
+
       var fileData = {
         name: file.name,
         size: file.size,
