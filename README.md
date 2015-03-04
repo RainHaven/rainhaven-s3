@@ -52,8 +52,8 @@ In the example app, there's a settings file: example/test-s3/config/development/
 ```json
 {
   "s3": {
-    "key": "<api-key-here>",
-    "secret": "<secret-here>"
+    "key": "<Access-Key-ID>",
+    "secret": "<Secret-Access-Key>"
   }
 }
 ```
